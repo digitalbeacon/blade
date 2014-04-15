@@ -156,6 +156,12 @@ namespace System
         /// <returns>The resulting string.</returns>
         public string toUpperCase() { return null; }
 
+		/// <summary>
+		/// Implicit conversion to bool.
+		/// </summary>
+		/// <returns>The resulting boolean value.</returns>
+		public static implicit operator Boolean(string d) { return true; }
+
         #region Compiler Required Methods
 #pragma warning disable 1591 // disable comment warnings
 

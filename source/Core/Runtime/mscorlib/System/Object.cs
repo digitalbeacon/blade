@@ -29,5 +29,18 @@ namespace System
         /// </summary>
         /// <returns>A string value.</returns>
         public string toLocaleString() { return null; }
+
+		/// <summary>
+		/// Gets the property names of the object as a string array.
+		/// </summary>
+		/// <returns>The property names of the object as a string array.</returns>
+		public static string[] keys(object obj) { return null; }
+
+		/// <summary>
+		/// Implicit conversion to bool.
+		/// </summary>
+		/// <returns>The resulting boolean value.</returns>
+		public static implicit operator Boolean(object o) { return true; }
+
     }
 }

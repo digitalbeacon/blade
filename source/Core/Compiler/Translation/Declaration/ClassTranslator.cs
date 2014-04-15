@@ -123,8 +123,8 @@ namespace Blade.Compiler.Translation
             // write static members as global statements
             foreach (var item in staticMembers)
             {
-                CompilationContext.Current.Model.GlobalStatements.Add(item);
-                //context.WriteModel(item);
+                //CompilationContext.Current.Model.GlobalStatements.Add(item);
+                context.WriteModel(item);
             }
 
             // if the class has a static constructor, add to globals
